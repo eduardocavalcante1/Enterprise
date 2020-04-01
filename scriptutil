@@ -1,0 +1,6 @@
+drop unidade;
+DROP TABLE IF EXISTS csd_relationship;
+DROP SEQUENCE IF EXISTS csd_relationship_csd_relationship_id_seq;
+
+DROP SEQUENCE IF EXISTS unidade_id_unidade_seq;
+DROP SEQUENCE IF EXISTS pdv_id_pdv_seq;

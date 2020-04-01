@@ -1,0 +1,5 @@
+select * from pdv;
+select * from filial;
+SELECT CURRENT_TIMESTAMP;
+SELECT CURRENT_DATE;
+SELECT CURRENT_TIMESTAMP(0);

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC '-//Hibernate/Hibernate Configuration DTD 3.0//EN' 
+'http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd'>
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuração da Conexão -->  
+        <property name="hibernate.dialect"> org.hibernate.dialect.PostgreSQLDialect </property>
+        <property name="hibernate.connection.driver_class"> org.postgresql.Driver  </property>
+        <property name="hibernate.connection.url"> jdbc:postgresql://localhost:5432/enterprise </property>
+        <property name="hibernate.connection.username"> postgres </property>
+        <property name="hibernate.connection.password"> admin    </property>
+    
+        <!-- Configuração Debug -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+    
+    
+        <!-- Mapeamento das Classes Modelo -->
+        <mapping class="model.bean.Parametros" />
+        <mapping class="model.bean.Filial" />
+        <mapping class="model.bean.Unidade" />
+        <mapping class="model.bean.Grupo" />
+        <mapping class="model.bean.SubGrupo" />
+        <mapping class="model.bean.Ncm" />
+        <mapping class="model.bean.Frete" />
+        <mapping class="model.bean.FormaPagamento" />
+        <mapping class="model.bean.EstadoCivil" />
+        <mapping class="model.bean.TipoVenda" />
+        <mapping class="model.bean.Funcao" />
+        <mapping class="model.bean.Pdv" />
+        <mapping class="model.bean.ImportarCidadesIbge" />
+        <mapping class="model.bean.Colaborador" />
+        <mapping class="model.bean.Senha" />
+        <mapping class="model.bean.Tamanho" />
+        <mapping class="model.bean.NaturezaOpe" />
+        <mapping class="model.bean.Cfop" />
+        <mapping class="model.bean.Tributacao" />
+        <mapping class="model.bean.Cliente" />
+        <mapping class="model.bean.Transportadora" />  
+    </session-factory>
+</hibernate-configuration>

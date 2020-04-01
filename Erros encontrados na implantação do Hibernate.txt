@@ -1,0 +1,15 @@
+NÃO UTILIZADO NO HIBERNATE 5
+ ** sessionFactory = new AnnotationConfiguration().configure().buildSessionFactory(); **
+java.lang.NoClassDefFoundError:org/hibernate/cfg/Mappings 
+java.lang.NoClassDefFoundError:org/jboss/logging/BasicLogger
+                               javax/transaction/SystemException
+                               javax/xml/bind/JAXBException
+                               net/bytebuddy/NamingStrategy$SuffixingRandom$BaseNameResolver
+
+org.hibernate.internal.util.config.ConfigurationException:Could not locate cfg.xml resource [hibernate.cfg.xml]
+Este erro resolveu colocando o hibernate.cfg.xml na pasta <defaul package>.
+
+org.hibernate.internal.util.config.ConfigurationException: Unable to perform unmarshalling at line 0 and column 0 in RESOURCE hibernate.cfg.xml.Message: null
+O erro acima provavelmente foi corrigido através das cópias/importações das bibliotecas que estavam dentro das pastas: 
+E:\JECF\Enterprise\Biblioteca\hibernate-release-5.4.2.Final\lib\required
+E:\JECF\Enterprise\Biblioteca\hibernate-release-5.4.2.Final\lib\jpa-metamodel-generator

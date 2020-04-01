@@ -1,0 +1,33 @@
+ALTERAÇÕES REALIZADAS NAS TABELAS DO BANCO ENTERPRISE
+
+- Tabela Função
+  Retirada do Campo vendedor 
+
+- Tabela Colaborador
+  Retirada do NOT NULL Campo telefone2,
+  Exclusão do Campo telefone3,
+  Retirada do NOT NULL Campo nomeconjugue,
+  Retirada do NOT NULL Campo nomepai,
+  Retirada do NOT NULL Campo email,
+  Criação  do Campo rg VARCHAR(20) podendo ser NULL,
+  Mudança  do Campo nomereduziodo VARCHAR(20) 
+  Mudança  do Campo Complemento podendo ser NULL,
+  Criação  do Campo dtadmissao DATE,
+  Criação  do Campo dtdemissao podendo ser NULL,
+  Mudança  do nome do Campo estado para uf,
+  Mudança  do nome do Campo sexo para genero.
+  Mudança  do Campo estadocivil_id INT para estadocivil com VARCHAR(45) 
+           - Decisão após a analise da não utilização da tabela estadocivil.
+
+
+- Tabela estadocivil
+  Após Analise, decidimos não utiliza-la, deixando COMBOBOX CONSTANTES
+
+- Tabela Senha
+  Mudança no Campo senha passando para VARCHAR(256),
+  Criação dos Campos:
+  usuariocadastro  INT                         NOT NULL,
+  dtcadastro       TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+  usuarioalteracao INT                         NOT NULL,
+  dtalteracao      TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+  cancelado        VARCHAR(01)                 NOT NULL,	

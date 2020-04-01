@@ -1,0 +1,8 @@
+<!--  Conexao PostgreSQL 
+-->- <conexao>
+  <localsgbd>localhost</localsgbd> 
+  <driver>org.postgresql.Driver</driver> 
+  <usuarioBD>postgres</usuarioBD> 
+  <senhaBD>admin</senhaBD> 
+  <drive>jdbc:postgresql:</drive> 
+  <nomebd>enterprise</nomebd>
